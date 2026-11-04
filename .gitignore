@@ -1,0 +1,57 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.pfx
+*.p12
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Database files and backups
+*.bak
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary and generated files
+tmp/
+temp/
+output/
+outputs/
+rendered_*/
+
+# Power BI files
+*.pbix
+
+# Jupyter
+.ipynb_checkpoints/
