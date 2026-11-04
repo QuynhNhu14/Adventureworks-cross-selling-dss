@@ -140,7 +140,7 @@ else:
 
     st.dataframe(
         display_df,
-        width="stretch",
+        use_container_width=True,
         hide_index=True,
         column_config={
             "Support": st.column_config.NumberColumn(format="%.2%%"),
@@ -164,7 +164,7 @@ else:
         },
         title="Top sản phẩm mua kèm theo Lift",
     )
-    st.plotly_chart(fig_bar, width="stretch")
+    st.plotly_chart(fig_bar, use_container_width=True)
 
 st.divider()
 
@@ -186,7 +186,7 @@ with left:
             "Lift": "Lift",
         },
     )
-    st.plotly_chart(fig_scatter, width="stretch")
+    st.plotly_chart(fig_scatter, use_container_width=True)
 
 with right:
     st.subheader("Cách đọc kết quả")
@@ -221,7 +221,7 @@ all_display = filtered_all[[
 
 st.dataframe(
     all_display,
-    width="stretch",
+    use_container_width=True,
     hide_index=True,
     column_config={
         "Support": st.column_config.NumberColumn(format="%.2%%"),
